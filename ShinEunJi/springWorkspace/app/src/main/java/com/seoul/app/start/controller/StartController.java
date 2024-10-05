@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @Controller
-@RequestMapping
 @RequiredArgsConstructor
 public class StartController {
 
-    @GetMapping("join")
+    @GetMapping("/")
     public String join(){return "start/start";}
 
 
