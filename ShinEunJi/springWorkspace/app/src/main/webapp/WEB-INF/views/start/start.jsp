@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>잘 풀리는 팀 start</title>
-  <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="css/start.css">
    <!-- Google Fonts 추가 (선택 사항) -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
       </form>
 </div>
 
-  <script src="start.js"></script>
+  <script src="js/start.js"></script>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
