@@ -53,3 +53,34 @@ body, html {
   align-items: center;
   font-size: 2em; /* 가짜 지도 텍스트 크기 */
 }
+
+.menu{
+  display: flex;
+  justify-content: center;
+  grid-column: 1fr, 1fr;
+}
+
+
+.menu button {
+  background-color: #b09668;
+  color: white;
+  border: none;
+  font-family: "Grandiflora One", cursive;
+  font-size: smaller;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  margin: 5px;
+}
+
+.menu button:hover {
+  background-color: #54cc88;
+}
+
+.menu button:active {
+  background-color: #54cc88;
+}
+
+.menu button:focus {
+  outline: none;
+}

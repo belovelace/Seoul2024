@@ -1,0 +1,88 @@
+
+
+
+
+/* 검색 섹션 스타일 */
+.search-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid #b09668;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 공원 목록 스타일 */
+.parks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.park-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.park-item:hover {
+  transform: scale(1.02);
+}
+
+.park-name {
+  color: #b09668;
+  margin-bottom: 10px;
+}
+
+.park-address,
+.park-restroom {
+  margin-bottom: 8px;
+}
+
+.details-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #b09668;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #8c754e;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #54cc88;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .park-item {
+      width: 90%;
+  }
+
+  #searchInput {
+      width: 90%;
+  }
+}

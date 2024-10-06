@@ -18,27 +18,53 @@ body, html {
   font-style: normal;
 }
 
-.header {
-  background: linear-gradient(120deg, #b09668, #54cc88, #fff677);
+/* 푸터 스타일 */
+footer {
+  background-color: #54cc88;
   color: white;
   text-align: center;
-  padding: 15px 15px; /* 상단 바의 패딩 */
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 
-/* 상단 타이틀 스타일 */
-.header h1 {
-  color: white;
-  text-align: center;
-  margin: 3px;
-  font-family: "Grandiflora One", cursive;
-  font-weight: bolder;
-  font-size: large;
-}
 
 .map-container {
   flex: 1; /* 남은 공간을 모두 차지 */
   display: flex;
   justify-content: center; /* 가운데 정렬 */
   align-items: center; /* 수직 가운데 정렬 */
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  grid-column: 1fr, 1fr;
+}
+
+
+.menu button {
+  background-color: #b09668;
+  color: white;
+  border: none;
+  font-family: "Grandiflora One", cursive;
+  font-size: smaller;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+
+  margin: 5px;
+}
+
+.menu button:hover {
+  background-color: #54cc88;
+}
+
+.menu button:active {
+  background-color: #54cc88;
+}
+
+.menu button:focus {
+  outline: none;
 }

@@ -1,0 +1,67 @@
+
+
+/* 헤더 스타일 */
+header {
+  background-color: #b09668;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 검색 섹션 스타일 */
+.search-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid #b09668;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 휴지 상태 목록 스타일 */
+.tissue-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tissue-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.tissue-item:hover {
+  transform: scale(1.02);
+}
+
+.restroom-code {
+  color: #b09668;
+  margin-bottom: 10px;
+}
+
+.stall-number,
+.tissue-status {
+  margin-bottom: 8px;
+}
+
+.tissue-status {
+  font-weight: bold;
+  color: #b09668;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+ 

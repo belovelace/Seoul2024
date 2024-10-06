@@ -43,7 +43,7 @@ function onGeoError(error) {
             // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
             var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
 
-            // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다
+            // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 -> 추후에는 ajax로 넘기면 될듯
             var positions = [
                 {
                     content: '<div class="customoverlay">' +
