@@ -20,7 +20,7 @@
 
     <div class="map-container">
         <!-- 여기에는 카카오 api 지도 들어감 -->
-      <%@ include file="/WEB-INF/views/util/map.jsp" %>
+      <%@ include file="/WEB-INF/views/map/map.jsp" %>
     </div>
 
 
