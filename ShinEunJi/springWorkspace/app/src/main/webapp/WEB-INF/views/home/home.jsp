@@ -19,7 +19,7 @@
     </header>
 
     <div class="map-container">
-        <!-- 여기에는 지도가 들어갈 예정 -->
+        <!-- 여기에는 카카오 api 지도 들어감 -->
       <%@ include file="/WEB-INF/views/util/map.jsp" %>
     </div>
 
