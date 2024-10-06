@@ -14,18 +14,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Grandiflora+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="container"></div>
     <header class="header">
         <h1>잘 풀리는 팀</h1>
     </header>
 
     <div class="map-container">
         <!-- 여기에는 지도가 들어갈 예정 -->
-         <include file="map.html"></include>
-      <div id="map">지도</div>
+      <%@ include file="/WEB-INF/views/util/map.jsp" %>
     </div>
-</div>
+
 
 </body>
 </html>
