@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
           message.textContent = "시작합니다!";
           message.classList.add('show');
           console.log("메시지 표시");
+
+     // 2.5초 후에 페이지 이동 실행
+    setTimeout(function() {
+    location.href = 'Http://127.0.0.1:8686/home';
+    }, 1500); // 2500ms = 2.5초
+
       } else {
           // 이미 메시지가 표시된 경우 숨기기
           message.textContent = "";
@@ -44,4 +50,7 @@ document.getElementById('adminLoginForm').addEventListener('submit', function(ev
       alert('아이디 또는 비밀번호가 잘못되었습니다.');
   }
 });
+
+
+
 

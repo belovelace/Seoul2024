@@ -21,7 +21,7 @@
         <p class="message" id="startMessage"></p> <!-- 메시지 요소 -->
     </header>
     <div class="content">
-        <button class="start-btn" onclick="location.href='Http://127.0.0.1:8686/home';">시작</button>
+        <button class="start-btn" id="startBtn">시작</button>
     </div>
 
         <!-- 관리자 로그인 폼 추가 -->
