@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
      // 2.5초 후에 페이지 이동 실행
     setTimeout(function() {
-    location.href = 'Http://127.0.0.1:8686/home';
+    location.href = 'Http://127.0.0.1:8787/home';
     }, 1500); // 2500ms = 2.5초
 
       } else {
@@ -36,20 +36,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /////// 관리자 로그인
+// 관리자 로그인
 document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // 기본 제출 동작 방지
+    event.preventDefault(); // 기본 제출 동작 방지
 
-  const adminId = document.getElementById('adminId').value;
-  const adminPassword = document.getElementById('adminPassword').value;
+    const adminId = document.getElementById('adminId').value;
+    const adminPassword = document.getElementById('adminPassword').value;
 
-  // 간단한 로그인 처리 예시
-  if (adminId === 'admin' && adminPassword === 'password') { // 예시로 'admin'과 'password'로 로그인
-      alert('로그인 성공!');
-      // 로그인 성공 후 페이지 이동 또는 추가 작업 수행
-  } else {
-      alert('아이디 또는 비밀번호가 잘못되었습니다.');
-  }
+    // AJAX 요청
+    fetch('http://localhost/php/adminLogin.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            'adminId': adminId,
+            'adminPassword': adminPassword
+        })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('로그인 성공!');
+                // 로그인 성공 후 페이지 이동
+                location.href = 'home'; // 성공 후 이동할 페이지
+            } else {
+                alert(data.message); // 서버에서 보낸 에러 메시지 표시
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('로그인 중 오류가 발생했습니다.');
+        });
 });
+
 
 
 
