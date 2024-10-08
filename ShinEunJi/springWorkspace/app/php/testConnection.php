@@ -6,7 +6,7 @@ header('Access-Control-Allow-Origin: *'); // CORS 설정
 $servername = "localhost";
 $username = "root";
 $password = "1111"; // application.properties에 설정한 비밀번호
-$dbname = "Seoul0224";
+$dbname = "seoul2024";
 
 // MySQL 연결 생성
 $conn = new mysqli($servername, $username, $password, $dbname);
