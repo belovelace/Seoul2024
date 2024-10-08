@@ -18,9 +18,9 @@
     <%@ include file="/WEB-INF/views/util/header.jsp" %>
 
     <div class="menu">
-      <button id="viewAllParks" onclick="location.href='Http://127.0.0.1:8686/parkList';">모든 공원 조회</button>
-      <button id="viewTrashStatus" onclick="location.href='Http://127.0.0.1:8686/tissueList';">휴지 상태로 조회</button>
-      <button id="viewGoStart" onclick="location.href='Http://127.0.0.1:8686';">시작화면 이동</button>
+      <button id="viewAllParks" onclick="location.href='Http://127.0.0.1:8787/parkList';">모든 공원 조회</button>
+      <button id="viewTrashStatus" onclick="location.href='Http://127.0.0.1:8787/tissueList';">휴지 상태로 조회</button>
+      <button id="viewGoStart" onclick="location.href='Http://127.0.0.1:8787';">시작화면 이동</button>
     </div>
 
     <div class="map-container">
