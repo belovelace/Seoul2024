@@ -28,7 +28,7 @@ $latitude = $_POST['LATITUDE'];
 $longitude = $_POST['LONGITUDE'];
 
 // SQL 쿼리 작성: tissueCode, machinNum, latitude, longitude를 조건으로 데이터 조회
-$sql = "SELECT * FROM tissue_table WHERE tissue_code = ? AND machine_num = ? AND latitude = ? AND longitude = ?";
+$sql = "SELECT * FROM toilet WHERE CODE = ? AND MACHIN_NUM = ? AND LATITUDE = ? AND LONGITUDE = ?";
 
 // Prepared statement 생성
 $stmt = $conn->prepare($sql);

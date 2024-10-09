@@ -18,20 +18,12 @@
         <main>
             <section class="search-section">
                 <input type="text" id="searchInput" placeholder="화장실 코드 또는 칸 번호로 검색..." onkeyup="filterTissueStatus()">
+                <button onclick="fetchTissueData()">검색</button>
             </section>
 
+
             <section class="tissue-list" id="tissueList">
-                <div class="tissue-item">
-                    <h2 class="restroom-code">화장실 코드: A123</h2>
-                    <p class="stall-number">1번 칸</p>
-                    <p class="tissue-status">휴지 잔여 상태: 충분</p>
-                </div>
-                <div class="tissue-item">
-                    <h2 class="restroom-code">화장실 코드: A123</h2>
-                    <p class="stall-number">2번 칸</p>
-                    <p class="tissue-status">휴지 잔여 상태: 부족</p>
-                </div>
-                <!-- 추가 정보 항목을 여기에 추가하세요 -->
+               <!--데이터 동적 추가-->
             </section>
         </main>
 
