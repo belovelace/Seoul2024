@@ -22,19 +22,18 @@ if ($conn->connect_error) {
 }
 
 // POST 방식으로 전송된 데이터 받기
-$tissueCode = $_POST['CODE'];
-$machinNum = $_POST['MACHIN_NUM'];
-$latitude = $_POST['LATITUDE'];
-$longitude = $_POST['LONGITUDE'];
+$machin_num = $_POST['CODE'];
+$state_num = $_POST['STATE_NUM'];
 
-// SQL 쿼리 작성: tissueCode, machinNum, latitude, longitude를 조건으로 데이터 조회
-$sql = "SELECT * FROM toilet WHERE CODE = ? AND MACHIN_NUM = ? AND LATITUDE = ? AND LONGITUDE = ?";
+
+// SQL 쿼리 작성:  데이터 조회
+$sql = "SELECT * FROM machin WHERE CODE = ? AND STATE_NUM = ? ";
 
 // Prepared statement 생성
 $stmt = $conn->prepare($sql);
 
 // 파라미터 바인딩
-$stmt->bind_param("ssss", $tissueCode, $machinNum, $latitude, $longitude);
+$stmt->bind_param("ssss", $machin_num,$state_num);
 
 // 쿼리 실행
 $stmt->execute();
