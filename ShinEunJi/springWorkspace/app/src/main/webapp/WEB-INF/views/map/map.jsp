@@ -16,5 +16,5 @@
 
   <script src="js/map.js"></script>
 
-
+  </body>
 </html>

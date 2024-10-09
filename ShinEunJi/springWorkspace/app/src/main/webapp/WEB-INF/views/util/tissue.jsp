@@ -35,24 +35,7 @@
             </section>
         </main>
 
-        <!-- JavaScript 필터링 함수 -->
-        <script>
-            function filterTissueStatus() {
-                const input = document.getElementById('searchInput');
-                const filter = input.value.toLowerCase();
-                const tissues = document.getElementById('tissueList').getElementsByClassName('tissue-item');
-
-                for (let i = 0; i < tissues.length; i++) {
-                    const code = tissues[i].getElementsByClassName('restroom-code')[0].innerText.toLowerCase();
-                    const stall = tissues[i].getElementsByClassName('stall-number')[0].innerText.toLowerCase();
-                    if (code.includes(filter) || stall.includes(filter)) {
-                        tissues[i].style.display = "";
-                    } else {
-                        tissues[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
+    <script scr="js/tissue.js"></script>
     </body>
     </html>
 
